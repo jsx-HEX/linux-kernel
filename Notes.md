@@ -14,6 +14,6 @@
 # vim
 1. 不正常退出会产生名为 .filename.swp 隐藏文件，再次进入文件会异常，可使用rm命令删除.filename.swp文件。之后可再进入原文件，但是未保存的修改会丢失
 
-#Linux命令
+# Linux命令
 **cp** 复制文件或目录
 ex：`cp -r Desktop/kernel/exnum ~/mylinux/ex2_exnum` //将Desktop/kernel路径里exnum文件夹复制到mylinux路径下，并重命名为ex2_exnum
