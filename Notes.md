@@ -16,4 +16,6 @@
 
 # Linux命令
 **cp** 复制文件或目录
-ex：`cp -r Desktop/kernel/exnum ~/mylinux/ex2_exnum` //将Desktop/kernel路径里exnum文件夹复制到mylinux路径下，并重命名为ex2_exnum
+
+ex：
+`cp -r Desktop/kernel/exnum ~/mylinux/ex2_exnum` //将Desktop/kernel路径里exnum文件夹复制到mylinux路径下，并重命名为ex2_exnum
