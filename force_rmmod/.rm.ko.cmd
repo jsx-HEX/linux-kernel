@@ -1,0 +1,1 @@
+cmd_/home/jsx/mylinux/force_rmmod/rm.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /home/jsx/mylinux/force_rmmod/rm.ko /home/jsx/mylinux/force_rmmod/rm.o /home/jsx/mylinux/force_rmmod/rm.mod.o ;  true
