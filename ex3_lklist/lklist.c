@@ -28,12 +28,12 @@ void create_lklist(void)
 	}
 }
 
-void traversal_lklist(void)
+void traverse_lklist(void)
 {
 	struct lklist *p;
 	struct list_head *pos;
 	int i = 1;
-	printk("\nTraveral jsx-HEx's linux kernel list!\n");
+	printk("\nTraverse jsx-HEx's linux kernel list!\n");
 	list_for_each(pos, &lk.list)
 	{
 		p = list_entry(pos,struct lklist, list);
@@ -49,7 +49,7 @@ void del_lklist(void)
 	struct lklist *p;
 	int i = 10;
 	printk("\nDelete jsx-HEX's linux kernel list!\n");
-	list_for_each(pos, &lk.list)
+	list_for_each_safe(pos, n, &lk.list)
 	{
 		p = list_entry(pos, struct lklist, list);
 		list_del(pos);
@@ -66,9 +66,9 @@ static int __init lklist_init(void)
 {
 	printk("\nLinux kernel list is starting...\n");
 	create_lklist();
-	traversal_lklist();
+	traverse_lklist();
 	del_lklist();
-	traversal_lklist();
+	traverse_lklist();
 	return 0;
 }
 
